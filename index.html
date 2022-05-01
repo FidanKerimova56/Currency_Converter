@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- !Required meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- !Style css -->
+    <link rel="stylesheet" media="(min-width:300px)" href="./css/mobile.css" />
+    <link rel="stylesheet" media="(min-width:700px)" href="./css/tablet.css" />
+    <link rel="stylesheet" media="(min-width:1101px)" href="./css/style.css" />
+
+    
+   
+</head>
+<body>
+    <div id="container">
+        <!-- !NAVBAR -->
+        <nav>
+            <!-- Menu icon -->
+            <div class="open-close-bar">
+                <input id="menu-toggle" type="checkbox" />
+                <label class='menu-button-container' for="menu-toggle">
+                <div class='menu-button'></div>
+              </label>
+                <ul class="menu">
+                    <li>БАНК</li>
+                    <li>БИЗНЕС</li>
+                    <li>ИНВЕСТИЦИИ</li>
+                    <li>СТРАХОВАНИЕ</li>
+                    <li>МОБАЙЛ</li>
+                    <li>ПУТЕШЕСТВИЯ</li>
+                    <li>РАЗВЛЕЧЕНИЯ</li>
+                </ul>
+            </div>
+            <!-- Logo -->
+            <div id="logo">
+                <a href="">
+                    <img src="./assets/logo.svg" alt="">
+                </a>
+            </div>
+            <!-- Links -->
+            <ul class="close">
+                <li><a href="#">БАНК</a></li>
+                <li><a href="#">БИЗНЕС</a></li>
+                <li><a href="#">ИНВЕСТИЦИИ</a></li>
+                <li><a href="#">СТРАХОВАНИЕ</a></li>
+                <li><a href="#">МОБАЙЛ</a></li>
+                <li><a href="#">ПУТЕШЕСТВИЯ</a></li>
+                <li><a href="#">РАЗВЛЕЧЕНИЯ</a></li>
+            </ul>
+            <!-- button -->
+            <button id="sign-in">ВОЙТИ</button>
+        </nav>
+        <!-- !Main -->
+        <div id="main">
+            <h1>Конвертер валют онлайн</h1>
+            <div class="section-container">
+                <!-- !Convert from -->
+                <div id="convert-from">
+                    <p class="convert-from">У меня есть </p>
+                    <div class="all-currency-from d-flex">
+                        <div class="each-currency-from active">RUB</div>
+                        <div class="each-currency-from">USD</div>
+                        <div class="each-currency-from">EUR</div>
+                        <div class="each-currency-from">GBP</div>
+                    </div>
+                   <div class="text-area" >
+                       <input type="number" id="convert-from-area"/>
+                       <p id="count-of-money-from">1 RUB = 0.0135 USD</p>
+                   </div> 
+                </div>
+                <!-- !Convert to -->
+                <div id="convert-to">
+                    <p class="convert-to">Хочу приобрести</p>
+                    <div class="all-currency-to d-flex">
+                        <div class="each-currency-to">RUB</div>
+                        <div class="each-currency-to active">USD</div>
+                        <div class="each-currency-to">EUR</div>
+                        <div class="each-currency-to">GBP</div>
+                    </div>
+                   <div class="text-area" >
+                       <input id="convert-to-area"></input>
+                       <p id="count-of-money-to">1 USD = 73.8896 RUB</p>
+                   </div> 
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="./app/api.js"></script>
+    <script
+    src="https://kit.fontawesome.com/39529855fe.js"
+    crossorigin="anonymous"
+  ></script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+/* !GLOBAL CSS */
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&family=Lato:wght@300;400&family=Maven+Pro:wght@400;500;600;800&family=Montserrat:wght@300;400;500;600;700;800;900&family=Oswald:wght@700&family=Roboto+Slab:wght@100;200;300;700&family=Roboto:wght@100;300;400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.d-flex {
+  display: flex;
+}
+.align-center {
+  align-items: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+
+
+#container {
+  width: 100%;
+  margin: 0 auto;
+}
+nav {
+  background-color: #f5f5f6;
+  height: 50px;
+  padding: 0 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav a {
+  text-decoration: none;
+  color: #959ba4;
+  display: inline-block;
+}
+nav > #logo{
+  display: inline-block;
+}
+.menu{
+  display: none;
+}
+nav > ul > li {
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 35px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 13px;
+  letter-spacing: 0.06em;
+}
+nav > ul > li:first-child a {
+  color: black;
+}
+#sign-in {
+  width: 58px;
+  height: 33px;
+  background: #ffffff;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 13px;
+  letter-spacing: 0.06em;
+  border: none;
+  cursor: pointer;
+}
+#main {
+  padding: 56px 19%;
+}
+.section-container{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+
+}
+#main > h1 {
+  margin-bottom: 33px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+}
+.convert-from,
+.convert-to {
+  width: 120px;
+  height: 28px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  color: #9f9f9f;
+}
+.close{
+  display: inline-block;
+}
+.all-currency-from .each-currency-from,
+.all-currency-to .each-currency-to {
+  padding: 8px 18px;
+  border: 1px solid #c6c6c6;
+  cursor: pointer;
+}
+.all-currency-from .each-currency-from:first-child,
+.all-currency-to .each-currency-to:nth-child(2){
+  background:#833AE0
+}
+.text-area {
+  border: 1px solid #c6c6c6;
+  margin-top: 20px;
+  padding: 11px 14px;
+  height: 99px;
+}
+.text-area h2,
+.text-area input {
+  width: 200px;
+  height: 38px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.text-area input{
+    border: none;
+    outline: none;
+}
+.text-area p {
+  margin-top: 25px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #c6c6c6;
+}
